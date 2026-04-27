@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Semáforo</title>
+
+    <style>
+        /* ===== CUERPO ===== */
+        body {
+            text-align: center;
+            font-family: Arial;
+            background-color: lightgray;
+        }
+
+        /* ===== CONTENEDOR DEL SEMÁFORO ===== */
+        .semaforo {
+            width: 120px;
+            background-color: black;
+            padding: 10px;
+            margin: 30px auto;
+            border-radius: 10px;
+        }
+
+        /* ===== LUCES ===== */
+        .luz {
+            width: 80px;
+            height: 80px;
+            background-color: gray; /* apagadas por defecto */
+            border-radius: 50%; /* forma circular */
+            margin: 10px auto;
+        }
+
+        /* ===== BOTONES ===== */
+        button {
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .rojo-btn { background-color: red; color: white; }
+        .amarillo-btn { background-color: gold; }
+        .verde-btn { background-color: green; color: white; }
+
+    </style>
+</head>
+<body>
+
+<h1>🚦 Semáforo</h1>
+
+<!-- SEMÁFORO -->
+<div class="semaforo">
+
+    <!-- 
+    La luz roja comienza encendida por defecto 
+    (estado inicial del programa)
+    -->
+    <div id="rojo" class="luz" style="background-color: red;"></div>
+
+    <!-- Las otras luces comienzan apagadas -->
+    <div id="amarillo" class="luz"></div>
+    <div id="verde" class="luz"></div>
+
+</div>
+
+<!-- BOTONES -->
+<button class="rojo-btn" onclick="encender('rojo')">Rojo</button>
+<button class="amarillo-btn" onclick="encender('amarillo')">Amarillo</button>
+<button class="verde-btn" onclick="encender('verde')">Verde</button>
+
+<script>
+
+/*
+FUNCIÓN: encender(color)
+
+Recibe un color como texto ("rojo", "amarillo", "verde")
+y controla qué luz se enciende.
+*/
+
+function encender(color) {
+
+    // Paso 1: apagar todas las luces (dejarlas grises)
+    document.getElementById("rojo").style.backgroundColor = "gray";
+    document.getElementById("amarillo").style.backgroundColor = "gray";
+    document.getElementById("verde").style.backgroundColor = "gray";
+
+    // Paso 2: encender solo la luz seleccionada
+
+    if (color === "rojo") {
+        document.getElementById("rojo").style.backgroundColor = "red";
+    }
+
+    if (color === "amarillo") {
+        document.getElementById("amarillo").style.backgroundColor = "yellow";
+    }
+
+    if (color === "verde") {
+        document.getElementById("verde").style.backgroundColor = "green";
+    }
+}
+
+</script>
+
+</body>
+</html>
