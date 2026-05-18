@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Piedra Papel o Tijera</title>
+
+    <!-- Conectamos el CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>🪨 📄 ✂️</h1>
+
+        <!-- =========================================
+             BOTONES DEL JUEGO
+
+             onclick ejecuta la función jugar()
+
+             Le enviamos:
+             - Piedra
+             - Papel
+             - Tijera
+        ========================================== -->
+
+        <button onclick="jugar('Piedra')">
+
+            🪨 Piedra
+
+        </button>
+
+
+        <button onclick="jugar('Papel')">
+
+            📄 Papel
+
+        </button>
+
+
+        <button onclick="jugar('Tijera')">
+
+            ✂️ Tijera
+
+        </button>
+
+
+
+        <!-- =========================================
+             RESULTADO
+
+             Este div será modificado
+             desde JavaScript usando DOM
+        ========================================== -->
+
+        <div id="resultado">
+
+            Resultado...
+
+        </div>
+
+    </div>
+
+    <!-- Conectamos JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
