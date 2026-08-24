@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica de caracteres para admitir tildes y emojis -->
+    <meta charset="UTF-8">
+    
+    <!-- Ajuste para que se vea bien en celulares y pantallas de cualquier tamaño -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la pestaña en el navegador -->
+    <title>Validador de Contraseñas</title>
+    
+    <!-- Conexión con nuestro archivo de diseño visual -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Contenedor principal estilo tarjeta -->
+    <div class="contenedor">
+        
+        <h2>Crea tu Contraseña 🔐</h2>
+        
+        <p>Escribe una contraseña segura que tenga al menos 8 caracteres.</p>
+        
+        <!-- Usamos type="text" en lugar de "password" para que los estudiantes 
+             vean lo que están escribiendo durante la clase y sea más fácil probar -->
+        <input type="text" id="input-password" placeholder="Escribe aquí tu clave...">
+        
+        <!-- Esta caja de texto cambiará de color y mensaje usando JavaScript -->
+        <div id="mensaje-validacion">Esperando contraseña...</div>
+        
+    </div>
+    
+    <!-- Conexión con nuestro archivo de lógica -->
+    <script src="script.js"></script>
+</body>
+</html>
