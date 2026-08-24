@@ -24,30 +24,3 @@ body {
     width: 100%;
 }
 
-/* =========================================================================
-   DISEÑO DEL CUADRO DE TEXTO (INPUT)
-   ========================================================================= */
-input {
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 2px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    /* Un pequeño efecto para cuando el usuario hace clic adentro */
-    outline: none;
-}
-
-/* =========================================================================
-   DISEÑO DEL MENSAJE DE ALERTA (DÉBIL/FUERTE)
-   ========================================================================= */
-#mensaje-validacion {
-    font-weight: bold;
-    padding: 12px;
-    border-radius: 6px;
-    /* Colores por defecto cuando no se ha escrito nada */
-    background-color: #f0f0f0;
-    color: #666666;
-    /* Transición suave para que el cambio de color de rojo a verde no sea brusco */
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
